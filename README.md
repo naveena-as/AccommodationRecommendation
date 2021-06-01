@@ -1,0 +1,2 @@
+# AccommodationRecommendation
+Accommodation Recommendation System using PyMongo
