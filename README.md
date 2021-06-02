@@ -6,7 +6,7 @@ This project aims to build a basic recommendation system with a menu driven prog
 
 ### Dataset
 The project is done on [Airbnb](https://en.wikipedia.org/wiki/Airbnb)'s publicly available [dataset](https://github.com/ashmeetchhabra/AirBnB-Data-analysis-and-recommendation-system/blob/master/airbnb500.csv) of New York City. Other datasets are available for exploration [here](http://insideairbnb.com/). The dataset used here has a single collection called "listing", and consists of 499 listings(rows) and 19 fields(columns) each.
-- id, name, host_id, host_name, neighbourhood_group, neighbourhood, latitude, longitude, room_type, price, minimum_nights, number_of_reviews, last_review, reviews_per_month, calculated_host_listings_count, availability_365, review_val, rating, text_review
+- `id`, `name`, `host_id`, `host_name`, `neighbourhood_group`, `neighbourhood`, `latitude`, `longitude`, `room_type`, `price`, `minimum_nights`, `number_of_reviews`, `last_review`, `reviews_per_month`, `calculated_host_listings_count`, `availability_365`, `review_val`, `rating`, `text_review`
 
 Sample data:
 
@@ -17,11 +17,11 @@ Initially, the database is imported to MongoDB using the mongoimport command or 
 
 ![Connection and import](https://user-images.githubusercontent.com/67685791/120346702-3e321380-c319-11eb-9583-c7bea6f18b07.png)
 
-Here, `accomodation` is the database name and “listing” is the collection name.
+Here, `accomodation` is the database name and `listing` is the collection name.
 `datetime` has been included for updating the `last_review` field while rating a listing,  `pprint` for printing documents in an orderly manner.
 
 The menu has 10 queries and an option to quit.
 
 ![Menu](https://user-images.githubusercontent.com/67685791/120347654-1abb9880-c31a-11eb-8359-75c8efa7d397.png)
 
-For each query, a separate function has been written, with some interlinked based on the logic. The listing id (feature "id") is the key of the documents, apart from the system generated feature "\_id".
+For each query, a separate function has been written, with some interlinked based on the logic. The listing id (feature `id`) is the key of the documents, apart from the system generated feature `_id`.
