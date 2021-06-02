@@ -17,7 +17,8 @@ Initially, the database is imported to MongoDB using the mongoimport command or 
 
 ![Connection and import](https://user-images.githubusercontent.com/67685791/120346702-3e321380-c319-11eb-9583-c7bea6f18b07.png)
 
-Here, “accomodation” is the database name and “listing” is the collection name.
+Here, `accomodation` is the database name and “listing” is the collection name.
+`datetime` has been included for updating the `last_review` field while rating a listing,  `pprint` for printing documents in an orderly manner.
 
 The menu has 10 queries and an option to quit.
 
